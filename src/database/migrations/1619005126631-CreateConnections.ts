@@ -5,7 +5,7 @@ import {
   TableForeignKey,
 } from "typeorm";
 
-export class CreateConnections1619218654405 implements MigrationInterface {
+export class CreateConnections1619005126631 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
@@ -45,7 +45,6 @@ export class CreateConnections1619218654405 implements MigrationInterface {
 
     await queryRunner.createForeignKey(
       "connections",
-
       new TableForeignKey({
         name: "FKConnectionUser",
         referencedTableName: "users",

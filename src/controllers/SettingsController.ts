@@ -17,6 +17,7 @@ class SettingsController {
       });
     }
   }
+
   async findByUsername(request: Request, response: Response) {
     const { username } = request.params;
 
@@ -26,6 +27,7 @@ class SettingsController {
 
     return response.json(settings);
   }
+
   async update(request: Request, response: Response) {
     const { username } = request.params;
     const { chat } = request.body;
@@ -33,7 +35,6 @@ class SettingsController {
     const settingsService = new SettingsService();
 
     const settings = await settingsService.update(username, chat);
-
     return response.json(settings);
   }
 }

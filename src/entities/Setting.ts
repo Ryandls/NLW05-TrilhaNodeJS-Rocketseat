@@ -1,11 +1,12 @@
 import {
+  Entity,
   Column,
   CreateDateColumn,
-  Entity,
-  PrimaryColumn,
   UpdateDateColumn,
+  PrimaryColumn,
 } from "typeorm";
-import { v4 as uuidV4 } from "uuid";
+
+import { v4 as uuid } from "uuid";
 
 @Entity("settings")
 class Setting {
@@ -18,14 +19,16 @@ class Setting {
   @Column()
   chat: boolean;
 
-  @CreateDateColumn()
-  created_at: Date;
-
   @UpdateDateColumn()
   updated_at: Date;
 
+  @CreateDateColumn()
+  created_at: Date;
+
   constructor() {
-    if (!this.id) this.id = uuidV4();
+    if (!this.id) {
+      this.id = uuid();
+    }
   }
 }
 
