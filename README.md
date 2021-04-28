@@ -90,7 +90,7 @@ Foi criado um chat de suporte, com o objetivo de adquirir mais conhecimentos sob
 
 </div>
 <div align="center">
-<h3><strong>Edited by Bryan.</strong><h3>
+<h3><strong>Created by Rocketseat 💜, edited by Bryan.</strong><h3>
 
 <img alt="LogoGif" title="" src="./src/assets/giphy.gif" width="100px" height="50"/>
 </div>
