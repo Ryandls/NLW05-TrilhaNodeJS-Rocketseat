@@ -42,7 +42,7 @@ Através do método da Rocketseat, aprenderemos novas ferramentas, novas tecnolo
 
 ## 💻 Projeto da NLW - Trilha Node.Js
 
-Foi criado um chat de suporte, com o objetivo de adquirir mais conhecimentos sobre Node.Js
+Foi criado um chat de suporte, com o objetivo de adquirir mais conhecimentos sobre Node.Js.
 
 
 
